@@ -1,0 +1,257 @@
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #0a9396;
+    --accent-color: #ee9b00;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header & Footer */
+header, footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 20px 0;
+}
+
+header .logo {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header .tagline {
+    margin: 5px 0 15px 0;
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+header .contact-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+.services-section, .about-section, .contact-section {
+    background-color: #fff;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.services-section h2, .about-section h2, .contact-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    color: var(--primary-color);
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background-color: var(--light-color);
+    border: 1px solid #dee2e6;
+    border-left: 5px solid var(--accent-color);
+    padding: 25px;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    margin-top: 0;
+    color: var(--secondary-color);
+}
+
+/* Booking Section */
+.booking-section {
+    background-color: #e9f5f5;
+    border-bottom: 1px solid #b3e0e0;
+}
+
+.booking-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.booking-section > .container > p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+.booking-step {
+    display: none;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.booking-step.active {
+    display: block;
+}
+
+.booking-step h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.step-info {
+    color: #6c757d;
+    margin-bottom: 25px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.option-button {
+    background-color: var(--light-color);
+    border: 2px solid #ced4da;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1em;
+    text-align: center;
+}
+
+.option-button:hover {
+    border-color: var(--secondary-color);
+    background-color: #e1f0f0;
+}
+
+.option-button.selected {
+    background-color: var(--secondary-color);
+    color: white;
+    border-color: var(--secondary-color);
+}
+
+.secondary-button {
+    background: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.secondary-button:hover {
+    background: #5a6268;
+}
+
+/* Confirmation */
+.confirmation-details {
+    background-color: var(--light-color);
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.confirmation-details p {
+    margin: 5px 0;
+}
+
+.final-message {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+    background-color: #d68a00;
+}
+
+/* Contact Section */
+.contact-details {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.contact-details a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
