@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Plumber's Business Name] - Professional Plumbing & Heating Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">[Plumber's Business Name]</h1>
+            <p class="tagline">Your Local, Professional Plumbing Experts</p>
+            <div class="contact-info">
+                <span>Call: <a href="tel:+35312345678">+353 12 345 678</a></span>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#booking">Book Online</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Booking Section -->
+        <section id="booking" class="booking-section">
+            <div class="container">
+                <h2>Book Your Service Online</h2>
+                <p>Select your area to find the next available appointment dates in your location.</p>
+                
+                <div id="booking-flow">
+                    <!-- Step 1: County Selection -->
+                    <div id="step-1" class="booking-step active">
+                        <h3>Step 1: Choose Your County</h3>
+                        <div class="options-grid" id="county-options">
+                            <!-- Counties will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Date Selection -->
+                    <div id="step-2" class="booking-step">
+                        <h3>Step 2: Choose an Available Date in <span id="selected-county-name"></span></h3>
+                        <p class="step-info">We are in your area on the following days:</p>
+                        <div class="options-grid" id="date-options">
+                            <!-- Dates will be populated by JavaScript -->
+                        </div>
+                        <button id="back-to-county" class="secondary-button">Back</button>
+                    </div>
+
+                    <!-- Step 3: Time Selection -->
+                    <div id="step-3" class="booking-step">
+                        <h3>Step 3: Choose a Time on <span id="selected-date-name"></span></h3>
+                        <p class="step-info">Please select an available time slot:</p>
+                        <div class="options-grid" id="time-options">
+                            <!-- Times will be populated by JavaScript -->
+                        </div>
+                        <button id="back-to-date" class="secondary-button">Back</button>
+                    </div>
+
+                    <!-- Step 4: Confirmation -->
+                    <div id="step-4" class="booking-step">
+                        <h3>Booking Confirmed!</h3>
+                        <div class="confirmation-details">
+                            <p><strong>Service:</strong> <span id="confirm-service">Boiler Service</span></p>
+                            <p><strong>Date:</strong> <span id="confirm-date"></span></p>
+                            <p><strong>Time:</strong> <span id="confirm-time"></span></p>
+                            <p><strong>Location:</strong> <span id="confirm-county"></span></p>
+                        </div>
+                        <p class="final-message">We will send you a confirmation SMS and call you 24 hours before your appointment.</p>
+                        <button id="new-booking" class="primary-button">Make Another Booking</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Boiler Servicing & Repair</h3>
+                        <p>Keep your boiler running safely and efficiently with our annual servicing and expert repair services.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Boiler Installation</h3>
+                        <p>Professional installation of all leading boiler brands with full warranties and safety certificates.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Radiator & System Bleeding</h3>
+                        <p>Fix cold radiators and noisy pipes by bleeding your central heating system to restore pressure.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Emergency Plumbing</h3>
+                        <p>Fast response for burst pipes, major leaks, and other urgent plumbing emergencies.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Pipework & Leaks</h3>
+                        <p>Expert detection and repair of hidden leaks and replacement of old or damaged pipework.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Bathroom Fitting</h3>
+                        <p>Complete bathroom refurbishments, from new suites to full tiling and plumbing installation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About [Plumber's Business Name]</h2>
+                <p>With years of experience serving the community, we pride ourselves on reliable, high-quality workmanship and excellent customer service. We are fully insured and certified, ensuring your home is in safe hands.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>For a free quote or to schedule an emergency call-out, don't hesitate to get in touch.</p>
+                <div class="contact-details">
+                    <p><strong>Phone:</strong> <a href="tel:+35312345678">+353 12 345 678</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@plumbersbusiness.ie">info@plumbersbusiness.ie</a></p>
+                    <p><strong>Areas Covered:</strong> All of [Your Main County] and surrounding areas.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 [Plumber's Business Name]. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
