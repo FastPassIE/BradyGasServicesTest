@@ -1,4 +1,4 @@
-# [Plumber's Business Name] - Demo Website
+# Brady Gas&Oil Services - Demo Website
 
 This is a static demo website for a professional plumbing service. It is designed to be hosted on GitHub Pages.
 
